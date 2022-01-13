@@ -1,30 +1,3 @@
-
-Skip to content
-Pull requests
-Issues
-Marketplace
-Explore
-@edwardmuss
-bdbaraban /
-AirBnB_clone_v2
-Public
-
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-
-    Insights
-
-AirBnB_clone_v2/2-do_deploy_web_static.py /
-bdbaraban Upload fabfile to distribute a web_static archive to a web server
-Latest commit 59d360c on Apr 9, 2019
-History
-0 contributors
-49 lines (44 sloc) 1.63 KB
 #!/usr/bin/python3
 # Fabfile to distribute an archive to a web server.
 import os.path
@@ -37,6 +10,7 @@ env.hosts = ["104.196.168.90", "35.196.46.172"]
 
 def do_deploy(archive_path):
     """Distributes an archive to a web server.
+
     Args:
         archive_path (str): The path of the archive to distribute.
     Returns:
@@ -73,19 +47,3 @@ def do_deploy(archive_path):
            format(name)).failed is True:
         return False
     return True
-
-    © 2022 GitHub, Inc.
-
-    Terms
-    Privacy
-    Security
-    Status
-    Docs
-    Contact GitHub
-    Pricing
-    API
-    Training
-    Blog
-    About
-
-Loading complete
